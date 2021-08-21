@@ -1,5 +1,5 @@
 
-# Practice NLP with Bags of Popcorn dataset
+# Practice NLP with Bags of Popcorn
 
 ![][headline_img]
 
