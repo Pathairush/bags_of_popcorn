@@ -157,12 +157,14 @@ def preprocess_data(df, num_most_freq_word, max_review_length, tokenizer=None, m
     num_most_freq_word -> the number of unique words that cover the provided coverage of the total words.
     max_review_length -> the max size of review length based on the training dataframe.
     tokenizer -> if it's none, fit the tokenizer based on the provided `df`. else, use the provided tokenizer for preprocessing data.
+    scaler -> if it's nont, fit the standard scaler based on the splitted training data set.
 
     Returns:
     If tokenizer provided
     X, X_val -> train sequences, validated sequences
     y, y_val -> train target, validated target
     tokenizer -> the tokenizer that fits on all train data.
+    scaler -> the standard scaler that fits on splitted train data.
 
     else
     X -> test sequences
